@@ -1,7 +1,57 @@
-/*
-  Aquí van tus estilos o los @import './tus/ficheros'
-*/
+@import 'core/variables';
+@import 'core/mixins';
+@import 'core/reset';
+@import 'core/fancy-borders';
+@import 'layout/page';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'pages/landing';
+@import 'pages/index';
 
-body {
-  background-color: lightblue;
+
+.palette1 {
+
+  .preview__name {
+    color: $color-dark-green-blue;
+  }
+
+  .preview__header {
+    border-color: $color-dirty-blue;
+  }
+
+  .preview__icon {
+    border-color: $color-hospital-green;
+    color: $color-hospital-green;
+  }
+
+}
+
+.palette2 .preview__name {
+  color: $color-dried-blood;
+}
+
+.palette2 .preview__header {
+  border-color: $color-rusty-red;
+}
+
+.palette2 .preview__icon {
+  border-color: $color-tomato;
+  color: $color-dried-blood;
+}
+
+.palette3 {
+
+  .preview__name {
+    color: $color-slate;
+  }
+
+  .preview__header {
+    border-color: $color-faded-orange;
+  }
+
+  .preview__icon {
+    border-color: $color-light-grey-blue;
+    color: $color-slate;
+  }
+
 }

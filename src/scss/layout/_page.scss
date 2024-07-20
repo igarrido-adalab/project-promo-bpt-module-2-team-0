@@ -1,0 +1,185 @@
+* {
+  font-family: $font-main;
+  font-weight: 100;
+}
+
+body {
+  background-color: $color-bg;
+}
+
+.page {
+  @include tablet {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+  }
+}
+
+.preview {
+  padding: 38px 35px 40px 45px;
+  background-image: linear-gradient(to bottom, #bfcdd0, #dde9ed);
+
+  @include tablet {
+    width: calc( 100% - 400px );
+  }
+
+  &__card {
+    width: 240px;
+    height: 330px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+  }
+
+  &__photo {
+    width: 200px;
+    height: 200px;
+    background-image: url('../images/monigota.png');
+    background-size: cover;
+    background-position: center center;
+  }
+  &__header {
+    border-left: solid 5px $color-dirty-blue;
+    padding-left: 15px;
+    margin-left: -20px;
+  }
+  &__name {
+    color: $color-dark-green-blue;
+  }
+  &__icon {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    margin-left: 5px;
+    border-radius: 50%;
+    border: solid 2px $color-hospital-green;
+    color: $color-dark-green-blue;
+    text-decoration: none;
+  }
+}
+
+.form {
+  padding: 40px; 
+
+  @include tablet {
+    width: 400px;
+  }
+
+  &__box {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: solid 1px #d8d8d8;
+  }
+
+  &__heading {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &_paletteslist {
+    list-style-type: none;
+  }
+
+  &__item {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    margin-top: 18px;
+  }
+
+  &__designinput {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item--photo {
+    list-style-type: none;
+    display: flex;
+    margin-top: 18px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  &__photolabel {
+    width: 100%;
+  }
+  &__photobutton {
+    color: white;
+    background-color: $color-dull-orange;
+    font-weight:lighter;
+    width: 140px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+  }
+  &__photoinput {
+    display:none;
+  }
+  &__photothumb {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    border: solid 1px $color-hospital-green;
+    background-size: contain;
+    background-position: center center;
+  }
+}  /* END Form */
+
+.palette-1 {
+  .preview__name {
+    color: $color-dried-blood;
+  }
+  .preview__header {
+    border-color: $color-rusty-red;
+  }
+  .preview__icon {
+    color: $color-dried-blood;
+    border-color: $color-tomato;
+  }
+}
+
+.palette-2 {
+  .preview__name {
+    color: $color-dried-blood;
+  }
+  .preview__header {
+    border-color: $color-rusty-red;
+  }
+  .preview__icon {
+    color: $color-dried-blood;
+    border-color: $color-tomato;
+  }
+}
+
+.palette-3 {
+  .preview__name {
+    color: $color-slate;
+  }
+  .preview__header {
+    border-color: $color-faded-orange;
+  }
+  .preview__icon {
+    color: $color-slate;
+    border-color: $color-light-grey-blue;
+  }
+}
+
+/*
+.palette-2 {
+  color: $color-dried-blood;
+}
+
+.palette-2-link {
+  color: $color-dried-blood;
+  border-color: tomato;
+}
+
+.palette-3 {
+  color: $color-slate;
+}
+*/
+

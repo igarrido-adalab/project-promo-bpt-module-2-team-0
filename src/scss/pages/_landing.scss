@@ -1,0 +1,12 @@
+.landing {
+  text-align: center;
+
+  &__subtitle {
+    
+  }
+
+  &__box {
+    border-width: 3px;
+    border-color: $color-dull-orange;
+  }
+}
